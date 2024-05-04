@@ -1,0 +1,306 @@
+
+/* header et tabs*/ 
+.tabs {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .tab {
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .tab-active {
+    background-color:  rgb(218, 137, 227);
+    
+  }
+  
+  .content {
+    display: none;
+  }
+  
+  .active {
+    display: block;
+  }
+
+
+
+.parent {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    background-color: orange;
+    border: 3px solid black;
+    border-radius: 15px;
+    align-self: flex-end; 
+    max-width: fit-content; 
+    margin-left: auto;
+}
+
+body {
+    transition: background-color 0.5s ease;
+  }
+  
+  .dark-mode {
+    background-color: #333;
+    color: #fa0202;
+  }
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: whitesmoke
+ }  
+
+ header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;  
+    position: relative;
+ }
+ .flex-container {
+    display: flex;
+    justify-content: flex-end;
+    background-color: orange;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+/*emplacement logo*/
+.logo {
+    width: 150px;
+    height: auto;
+}
+/*taille du logo*/
+.logo img {
+    width: 150px;
+}
+.seconnecter {
+    display: flex;
+    background-color: orange;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+}
+.blockaccueil {
+    display: flex;
+    background-color: orange; 
+    padding: 15px;
+    margin: 0%;
+    margin-left: 0%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.blockblancsousaccueil{
+    margin:  0px ;
+    padding-block-end: 30px;
+    background-color: rgb(211, 26, 231);
+    opacity: 50%;
+}
+.blockprincipal{
+    display: flex;
+    background-color: orange;
+    padding: -500px;
+    margin: 15;
+}
+
+.flex-blockprincipal {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    margin-left: 20%;
+    width: 80%;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    justify-content: flex start;
+    border-left: 15px solid #007bff; 
+    padding: 20px; 
+    border-radius: 5px; 
+    background-color: #f8f9fa; 
+/*propriétés du texte*/
+    position: absolute;
+    left: 0;
+    top: auto;
+}
+
+.WizzardingMag {
+    background-color: whitesmoke;
+    margin-right: 390px;
+    padding: 20px; 
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.photojournal {
+ max-width: 100%;
+    height: auto;
+}
+/*Style des boutons Accueil/la boutique et le Magazine*/
+.bouton1,
+.bouton2,
+.bouton3 {
+    margin-left: 20px;
+}
+h2 {
+    margin: 0;
+}
+footer {
+    background-color: gray;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.paragraphe {
+  text-align: center;
+  background-color: rgb(218, 137, 227);
+  
+}
+
+/* Exercice caroussel  */
+.carousel-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+  }
+  
+  .prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .prev-btn {
+    left: 0;
+  }
+  
+  .next-btn {
+    right: 0;
+  }
+
+/* Exercice Caroussel */
+.carousel {
+  height: 100vh;
+  width: 50vw;
+  position: relative;
+}
+.carousel button {
+  position: absolute;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 2.6rem;
+  z-index: 2;
+  cursor: pointer;
+  color: rgb(30, 83, 216);
+  transform: translateY(-50%);
+  top: 50%;
+}
+#prev {
+  left: 5px;
+}
+#next {
+  right: 5px;
+}
+.carousel li {
+  list-style: none;
+}
+.slide {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+.slide.active {
+  opacity: 1;
+}
+.slide img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+    section {
+      text-align: justify-all;
+      position:relative;
+      margin-bottom: auto;
+    }
+    .text-content, image-content {
+      width: 50%;
+    }
+    .parent {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        background-color: orange;
+        border: 3px solid black;
+        border-radius: 15px;
+        max-width: fit-content; 
+    
+    }
+    .pouvoirs {
+        margin-left: 60PX;
+        }
+        .Communautée {
+        margin-Right: 60px;
+        }
+        
+        
+        .WizzardingMag {
+            background-color: whitesmoke;
+            margin-right: 390px;
+            padding: 20px; 
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    
+    }
+    
