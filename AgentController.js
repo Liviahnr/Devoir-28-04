@@ -53,6 +53,8 @@ const updateAgent = (req, res) => {
       },
       data: {
         name: agent.name,
+        metier: agent.metier,
+        age: Number(agent.age),
       },
     })
     .then((agent) => {
