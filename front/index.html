@@ -37,9 +37,11 @@
             console.log(agent);
             agentList.innerHTML += `
 						   <small>${agent.id}</small>
+               
 						<a href="agent.html?id=${agent.id}">
-                    <h2>${agent.name}</h2>
-					</a>
+                    <h2>${agent.name}</h2>	</a>
+                    <h3>${agent.metier}, ${agent.age} ans </h3>
+				
                 `;
           });
         });
